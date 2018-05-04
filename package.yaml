@@ -1,0 +1,20 @@
+name: nixops-example
+version: 0.1.0
+description: See README at <https://github.com/qoelet/nixops-example#readme>
+maintainer: Kenny Shen <kenny@machinesung.com>
+license: MIT
+github: qoelet/nixops-example
+category: Web application
+
+ghc-options: -Wall -Wincomplete-uni-patterns -Wmissing-import-lists
+
+dependencies:
+  - base >= 4.7 && < 5
+  - http-types
+  - wai
+  - warp
+
+executables:
+  nixops-example:
+    ghc-options: -threaded
+    main: Main.hs
